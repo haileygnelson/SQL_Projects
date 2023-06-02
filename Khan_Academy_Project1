@@ -1,1 +1,24 @@
+Create your own  store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
 
+INSERT INTO ReadingNook VALUES (1, "The Love Hypothesis", "ALi Hazelwood", "romance", 4, 10.70);
+INSERT INTO ReadingNook VALUES (2, "Twisted Hate", "Ana Huang", "romance", 5, 11.57);
+INSERT INTO ReadingNook VALUES (3, "Terms and Conditions", "Lauren Asher", "romance", 4, 10.71);
+INSERT INTO ReadingNook VALUES (4, "A Court of Mist and Fury", "Sara J Maas", "fantasy", 5, 16.99);
+INSERT INTO ReadingNook VALUES (5, "The Housmaid", "Freida McFadden", "thriller", 4, 9.74);
+INSERT INTO ReadingNook VALUES (6, "The Silent Patient", "Alex Michaelides", "thriller", 3, 10.99);
+INSERT INTO ReadingNook VALUES (7, "Sinners Anonymous", "Somme Sketcher", "romance", 4, 12.59);
+INSERT INTO ReadingNook VALUES (8, "King of Pride", "Ana Huang", "romance", 5, 15.32);
+INSERT INTO ReadingNook VALUES (9, "Corrupt", "Penelope Douglas", "romance", 4, 16.99);
+INSERT INTO ReadingNook VALUES (10, "Brutal Prince", "Sohpie Lark", "romance", 3, 13.59);
+INSERT INTO ReadingNook VALUES (11, "The Maidens", "Alex Michaelides", "mystery", 3, 12.99);
+INSERT INTO ReadingNook VALUES (12, "Play With Me", "Becka Mack", "sports romance", 5, 17.00);
+INSERT INTO ReadingNook VALUES (13, "The Paris Apartment", "Lucy Foley", "mystery", 4, 12.95);
+INSERT INTO ReadingNook VALUES (14, "Beach Read", "Emily Henry", "romance", 4, 8.39);
+INSERT INTO ReadingNook VALUES (15, "Indigo Ridge", "Devney Perry", "romance", 4, 15.29);
+
+SELECT * FROM ReadingNook;
+SELECT price FROM ReadingNook ORDER BY price DESC;
+SELECT AVG(rating) FROM ReadingNook;
+SELECT * FROM ReadingNook WHERE rating>=5;
